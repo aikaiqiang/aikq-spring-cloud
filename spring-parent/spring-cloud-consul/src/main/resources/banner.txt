@@ -1,0 +1,9 @@
+﻿
+    ___     ( ) / ___      ___     ( )  ___     ( )  ___       __      ___
+  //   ) ) / / //\ \     //   ) ) / / //   ) ) / / //   ) ) //   ) ) //   ) )
+ //   / / / / //  \ \   //   / / / / ((___/ / / / //   / / //   / / ((___/ /
+((___( ( / / //    \ \ ((___( ( / /      ( ( / / ((___( ( //   / /   //__
+
+address: www.aikaiqiang.com
+Application Version: ${application.version}${application.formatted-version}
+Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}

@@ -1,0 +1,25 @@
+application:
+  version: 1.0.0.RELEASE
+  formatted-version:  (v1.0.0.RELEASE)
+server:
+  port: 1007
+spring:
+  application:
+    name: consul-client-2
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        register: true
+        hostname:  192.168.0.177
+        service-name: ${spring.application.name}
+        health-check-path: /actuator/health
+        health-check-interval: 15s
+        tags: ${spring.application.name}
+# 健康监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
