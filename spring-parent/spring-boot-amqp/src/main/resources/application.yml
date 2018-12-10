@@ -1,0 +1,16 @@
+server:
+  port: 1002
+spring:
+  application:
+    name: spirng-boot-rabbitmq
+  rabbitmq:
+    host: 47.106.108.22
+    password: aikq
+    port: 5672
+    username: admin
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
