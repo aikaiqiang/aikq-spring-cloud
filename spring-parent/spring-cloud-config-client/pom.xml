@@ -10,11 +10,11 @@
     </parent>
 
     <groupId>com.aikq.ai</groupId>
-    <artifactId>spring-consul-client</artifactId>
+    <artifactId>spring-cloud-config-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>spring-consul-client</name>
+    <name>spring-cloud-config-client</name>
     <description>Demo project for Spring Boot</description>
 
     <dependencies>
@@ -24,16 +24,11 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-consul-discovery</artifactId>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 </project>

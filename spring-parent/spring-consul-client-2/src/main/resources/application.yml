@@ -2,10 +2,10 @@ application:
   version: 1.0.0.RELEASE
   formatted-version: (v1.0.0.RELEASE)
 server:
-  port: 1001
+  port: 1003
 spring:
   application:
-    name: consul-client-1
+    name: consul-client-3
   cloud:
     consul:
       host: localhost
@@ -17,11 +17,8 @@ spring:
         health-check-path: /actuator/health
         health-check-interval: 15s
         tags: ${spring.application.name}
-# 健康监控
 management:
   endpoints:
     web:
       exposure:
         include: refresh,health,info
-consul:
-  address: ${spring.cloud.consul.host}:${spring.cloud.consul.port}

@@ -1,5 +1,8 @@
+application:
+  version: 1.0.0.RELEASE
+  formatted-version: (v1.0.0.RELEASE)
 server:
-  port: 1002
+  port: 2001
 spring:
   application:
     name: spirng-boot-rabbitmq

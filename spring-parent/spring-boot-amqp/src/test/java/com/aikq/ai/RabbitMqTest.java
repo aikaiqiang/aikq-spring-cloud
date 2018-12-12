@@ -61,4 +61,5 @@ public class RabbitMqTest {
 		vo.setTo("to3");
 		rabbitMqProvider.sendMsgVOByRoutingKey("jack_1",vo);
 	}
+
 }

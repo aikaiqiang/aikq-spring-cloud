@@ -1,8 +1,8 @@
 application:
   version: 1.0.0.RELEASE
-  formatted-version:  (v1.0.0.RELEASE)
+  formatted-version: (v1.0.0.RELEASE)
 server:
-  port: 1007
+  port: 1002
 spring:
   application:
     name: consul-client-2

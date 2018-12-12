@@ -46,9 +46,15 @@
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
         </dependency>
-    </dependencies>
 
-    <!-- 只是对版本号进行管理，不会实际引入jar  -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+</dependencies>
+
+<!-- 只是对版本号进行管理，不会实际引入jar  -->
     <dependencyManagement>
         <dependencies>
             <!-- https://mvnrepository.com/artifact/io.spring.platform/platform-bom -->

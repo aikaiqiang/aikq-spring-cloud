@@ -3,17 +3,19 @@ package com.aikq.ai;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.config.server.EnableConfigServer;
 
 /**
- * @description  启动类
+ * @description  配置中心
  * @author aikq
- * @date 2018/12/7 17:12
+ * @date 2018/12/11 17:20
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class SpringCloudConsulApplication {
+@EnableConfigServer
+public class SpringCloudConfigApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringCloudConsulApplication.class, args);
+		SpringApplication.run(SpringCloudConfigApplication.class, args);
 	}
 }

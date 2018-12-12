@@ -5,15 +5,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
- * @description 启动器
+ * @description  配置中心客户端demo启动类
  * @author aikq
- * @date 2018/12/7 19:48
+ * @date 2018/12/11 20:00
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class SpringConsulClientApplication {
-
+public class ConfigClient {
 	public static void main(String[] args) {
-		SpringApplication.run(SpringConsulClientApplication.class, args);
+		SpringApplication.run(ConfigClient.class, args);
 	}
 }
