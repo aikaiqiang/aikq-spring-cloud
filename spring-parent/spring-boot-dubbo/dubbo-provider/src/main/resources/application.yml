@@ -1,0 +1,8 @@
+server:
+  port: 5001
+
+spring:
+  dubbo:
+    application:
+      name: dubbo-provider
+      registry: zookeeper://47.106.108.22:2181

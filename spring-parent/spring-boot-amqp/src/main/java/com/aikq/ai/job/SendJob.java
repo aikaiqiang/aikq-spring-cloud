@@ -16,9 +16,9 @@ public class SendJob {
 	@Autowired
 	private RabbitMqProvider rabbitMqProvider;
 
-//	@Scheduled(cron = "0/5 * * * * *")
+	@Scheduled(cron = "0/5 * * * * *")
 	public void sendMsg(){
-		String msg = "hello, test";
+		String msg = "hello, test 2019-01-25";
 		rabbitMqProvider.sendMsg(msg);
 	}
 }
